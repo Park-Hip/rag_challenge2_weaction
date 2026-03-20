@@ -1,0 +1,14 @@
+__pycache__/
+.env
+.venv
+data/raw/*
+!data/raw/.gitkeep
+eval/results/*
+!eval/results/.gitkeep
+.vscode/
+.idea/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+GEMINI.md

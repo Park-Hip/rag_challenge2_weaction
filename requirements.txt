@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+pydantic
+pydantic-settings
+python-dotenv
+PyYAML
+qdrant-client
+pymupdf4llm
+ragas
+requests
+httpx
+langchain-text-splitters
