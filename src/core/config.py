@@ -1,12 +1,24 @@
 from pydantic_settings import BaseSettings, SettingsConfigDict
-from pydantic import Dict, Any
+from typing import Dict, Any
 from pathlib import Path
 import yaml
 
 class Settings(BaseSettings):
-    model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8",)
+    EMBEDDING_URL: str = "https://api.jina.ai/v1/embeddings"
+    QDRANT_URL: str = "http://localhost:6333"
+    OLLAMA_BASE_URL: str ="http://localhost:11434/v1"
+
+    JINA_API_KEY: str
+    LANGFUSE_PUBLIC_KEY: str 
+    LANGFUSE_SECRET_KEY: str
+    LANGFUSE_HOST: str 
+
+    DATA_PATH: str = "data/raw"
+
+    model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8",extra="ignore")
 
     config_yaml: Dict[str, Any] = {}
+    prompts_yaml: Dict[str, Any] = {}
 
 def load_settings() -> Settings:
     settings = Settings()

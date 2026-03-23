@@ -1,3 +1,20 @@
 chunking:
   chunk_size: 512
   chunk_overlap: 50
+
+embedder:
+  model: jina-embeddings-v3
+  batch_size: 50
+  dimensions: 1024
+  task: retrieval.query
+  normalize: True
+
+qdrant:
+  collection_name: rag
+  distance: COSINE
+  limit: 3
+
+ollama:
+  model: qwen2.5:1.5b
+  temperature: 0.1
+  stream: False

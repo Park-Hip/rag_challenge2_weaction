@@ -10,3 +10,6 @@ ragas
 requests
 httpx
 langchain-text-splitters
+tenacity
+structlog
+langfuse
