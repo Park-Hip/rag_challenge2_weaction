@@ -4,12 +4,10 @@ import httpx
 from httpx import AsyncClient
 from tenacity import retry, retry_if_exception_type, wait_exponential, stop_after_attempt
 from qdrant_client import QdrantClient
-from langfuse import observe, get_client
+from src.core.langfuse import langfuse, observe
 
 from src.core.config import settings
 from src.core.logger import logger
-
-langfuse = get_client()
 
 class Retriever():
     def __init__(self):
@@ -23,6 +21,7 @@ class Retriever():
         self.dimensions = settings.config_yaml.get('embedder').get("dimensions", 1024)
         self.task = settings.config_yaml.get('embedder').get("task", "retrieval.query")
         self.normalize = settings.config_yaml.get('embedder').get("normalize", True)
+        self.score_threshold = settings.config_yaml.get('qdrant').get('score_threshold', 0.3)
         self.api_key = settings.JINA_API_KEY
         self.url = settings.EMBEDDING_URL
 
@@ -54,7 +53,8 @@ class Retriever():
             "model": self.model,
             "task": self.task,
             "normalized": self.normalize,
-            "input": [text]
+            "input": [text],
+            "dimensions": self.dimensions
         }
         try:
             async with AsyncClient(timeout=60.0) as client:
@@ -96,8 +96,11 @@ class Retriever():
             search_results = self.client.query_points(
                 collection_name=self.collection_name,
                 query=query_embedding,
-                limit=self.limit
+                limit=self.limit,
+                score_threshold=settings.config_yaml.get('qdrant').get('score_threshold', 0.3)
             )
+
+            
             
             formatted_results = [
                 {"score": r.score, "text": r.payload.get("text"), "source": r.payload.get("source")}

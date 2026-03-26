@@ -1,10 +1,8 @@
-from langfuse import observe, get_client
+from src.core.langfuse import langfuse, observe
 
 from src.generation.llm_client import LLMClient
 from src.core.logger import logger
 from src.core.config import settings
-
-langfuse = get_client()
 
 class QueryProcessor:
     """

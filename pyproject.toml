@@ -8,6 +8,7 @@ dependencies = [
     "fastapi>=0.135.1",
     "httpx>=0.28.1",
     "langchain-text-splitters>=1.1.1",
+    "langfuse>=4.0.1",
     "pydantic>=2.12.5",
     "pydantic-settings>=2.13.1",
     "pymupdf4llm>=1.27.2.1",
@@ -16,6 +17,7 @@ dependencies = [
     "qdrant-client>=1.17.1",
     "ragas>=0.4.3",
     "requests>=2.32.5",
+    "structlog>=25.5.0",
     "tenacity>=9.1.4",
     "uvicorn>=0.42.0",
 ]

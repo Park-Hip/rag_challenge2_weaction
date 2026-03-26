@@ -1,0 +1,84 @@
+[
+  {
+    "question": "Chính xác thì Chí Phèo được tìm thấy lần đầu tiên trong hoàn cảnh nào?",
+    "ground_truth": "Chí Phèo được một anh thả ống lươn tìm thấy vào một buổi sáng tinh sương, trong tình trạng trần truồng và xám ngắt, nằm trong một váy đụp để bên một lò gạch bỏ không.",
+    "context": [
+      "Một anh đi thả ống lươn, một buổi sáng tinh sương đã thấy hắn trần truồng và xám ngắt trong một váy đụp để bên một lò gạch bỏ không, anh ta rước lấy và đem về cho một người đàn bà góa mù ."
+    ]
+  },
+  {
+    "question": "Ngoại hình của Chí Phèo sau khi đi tù bảy, tám năm về được mô tả cụ thể như thế nào?",
+    "ground_truth": "Hắn trông đặc như thằng sắng cá với cái đầu trọc lốc, răng cạo trắng hớn, mặt đen và câng câng, hai mắt gườm gườm; ngực và hai cánh tay chạm trổ đầy rồng phượng với hình một ông thầy tướng cầm chùy.",
+    "context": [
+      "Trông đặc như thằng sắng cá ! Cái đầu thì trọc lốc, cái răng cạo trắng hớn, cái mặt thì đen mà rất câng câng, hai mắt gườm gườm trông góm chết!",
+      "Cái ngực phanh, đầy những nét chạm trổ rồng, phượng với một ông thày tướng cầm chuỳ, cả hai cánh tay cũng thế."
+    ]
+  },
+  {
+    "question": "Chính xác thì quan điểm 'trị dân' của cụ Bá Kiến đối với những hạng người như Chí Phèo là gì?",
+    "ground_truth": "Quan điểm của cụ Bá Kiến là 'mềm nắn rắn buông', không nên đè đầu cưỡi cổ nhất nhất mọi việc, và chủ trương dùng những thằng đầu bò để trị những thằng đầu bò.",
+    "context": [
+      "Thế nào là mềm nắn rắn buông? Cái nghề làm việc quan, nếu nhất nhất cái gì cũng đè đầu ấn cổ thì lại bán nhà đi cho sớm.",
+      "Không có những thằng đầu bò thì lấy ai mà trị những thằng đầu bò ?"
+    ]
+  },
+  {
+    "question": "Cụ thể thì món nợ mà cụ Bá Kiến sai Chí Phèo đi đòi ở nhà đội Tảo là bao nhiêu tiền?",
+    "ground_truth": "Số tiền là năm mươi đồng bạc.",
+    "context": [
+      "Đội Tảo nó còn nợ tôi năm mươi đồng đấy, anh chịu khó đến đòi cho tôi, đòi được tự nhiên có vườn.",
+      "Vợ hắn, thấy Chí Phèo thở ra mùi rượu, và biết rõ đầu đuôi món nợ, lấy năm mươi đồng giấu chồng đưa cho người nhà đi theo Chí Phèo ."
+    ]
+  },
+  {
+    "question": "Chính xác thì ngoại hình của Thị Nở được tác giả mô tả xấu xí như thế nào?",
+    "ground_truth": "Thị Nở có cái mặt ngắn, hai má hóp, mũi vừa ngắn, vừa to, vừa đỏ, vừa sần sùi như vỏ cam sành, môi dày đến nỗi nứt nở như rạn ra, và răng rất to chìa ra ngoài.",
+    "context": [
+      "Cái mặt của thị thực là một sự mỉa mai của hóa công: nó ngắn đến nỗi người ta có thể tưởng bề ngang lớn hơn bề dài, thế mà hai má nó lại hóp vào mới thật là tai hại...",
+      "Cái mũi thì vừa ngắn, vừa to, vừa đỏ, vừa sần sùi như vỏ cam sành, bành bạnh muốn chen lẫn nhau với những cái môi cũng cố to cho không thua cái mũi: có lẽ vì cố quá cho nên chúng nứt nở như rạn ra.",
+      "Đã thế những cái răng rất to lại chìa ra: ý hẳn chúng nghĩ sự cân đối chữa được một vài phần cho sự xấu ."
+    ]
+  },
+  {
+    "question": "Tại sao khi nhận bát cháo hành từ Thị Nở, Chí Phèo lại cảm thấy 'mắt mình ươn ướt'?",
+    "ground_truth": "Vì đây là lần đầu tiên Chí Phèo được một người đàn bà cho một cái gì đó tự nguyện mà không phải đi dọa nạt hay cướp giật.",
+    "context": [
+      "Thằng này rất ngạc nhiên. Hết ngạc nhiên thì hắn thấy mắt mình ươn ướt.",
+      "Bởi vì lần này là lần thứ nhất hắn được một người đàn bà cho .",
+      "Xưa nay, nào hắn có thấy ai tự nhiên cho cái gì."
+    ]
+  },
+  {
+    "question": "Chính xác thì Chí Phèo đã nói gì với cụ Bá Kiến trước khi ra tay giết cụ?",
+    "ground_truth": "Chí Phèo dõng dạc tuyên bố: 'Tao muốn làm người lương thiện !' và hỏi lại 'Ai cho tao lương thiện?' vì những vết mảnh chai trên mặt không thể mất đi được.",
+    "context": [
+      "-Tao muốn làm người lương thiện !",
+      "- Không được! Ai cho tao lương thiện? Làm thế nào cho mất được những vết mảnh chai trên mặt này ?"
+    ]
+  },
+  {
+    "question": "Cụ thể thì phản ứng của bà cô Thị Nở khi nghe cháu gái muốn lấy Chí Phèo là gì?",
+    "ground_truth": "Bà cô Thị Nở đã gào lên, xỉa xói vào mặt cháu gái, cho rằng đó là sự nhục nhã cho ông cha và không chấp nhận việc đi lấy một thằng không cha, chỉ có nghề rạch mặt ăn vạ như Chí Phèo.",
+    "context": [
+      "Ai lại đi lấy thằng chỉ có một nghề là rạch mặt ra ăn vạ. Trời ơi !",
+      "Nhục nhã ơi là nhục nhã ! Hỡi ông cha nhà bà ! Bà gào lên như con mẹ dại.",
+      "- Đã nhịn được đến bằng này tuổi thì nhịn hẳn, ai lại đi lấy thằng Chí Phèo !"
+    ]
+  },
+  {
+    "question": "Sau cái chết của cụ Bá Kiến và Chí Phèo, dân làng Vũ Đại có thái độ như thế nào?",
+    "ground_truth": "Dân làng bàn tán xôn xao; nhiều kẻ mừng thầm hoặc mừng ra mặt, cho rằng chúng giết nhau là trời có mắt; các phe cánh đối nghịch như đội Tảo thì đắc ý, còn những người biết điều thì nghi ngại rằng 'tre già măng mọc' cũng chẳng lợi lộc gì.",
+    "context": [
+      "Có nhiều kẻ mừng thầm, không thiếu kẻ mừng ra mặt!",
+      "Người khác thì nói toạc: 'Thằng nào chứ hai thằng ấy chết thì không ai tiếc! Rõ thật bọn chúng nó giết nhau, nào có cần phải đến tay người khác đâu'.",
+      "Những người biết điều thì hay ngờ vực, họ chép miệng nói: 'Tre già măng mọc, thằng ấy chết, còn thằng khác, chúng mình cũng chẳng lợi tí gì đâu ...'"
+    ]
+  },
+  {
+    "question": "Hình ảnh cuối cùng xuất hiện trong tâm trí Thị Nở ở kết thúc truyện là gì?",
+    "ground_truth": "Thị Nở thấy thoáng hiện ra một cái lò gạch cũ bỏ không, nơi vắng người qua lại.",
+    "context": [
+      "Đột nhiên thị thấy thoáng hiện ra một cái lò gạch cũ bỏ không, xa nhà cửa và vắng người lại qua ..."
+    ]
+  }
+]

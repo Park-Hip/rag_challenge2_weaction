@@ -6,12 +6,14 @@ import yaml
 class Settings(BaseSettings):
     EMBEDDING_URL: str = "https://api.jina.ai/v1/embeddings"
     QDRANT_URL: str = "http://localhost:6333"
-    OLLAMA_BASE_URL: str ="http://localhost:11434/v1"
+    OLLAMA_BASE_URL: str = "http://host.docker.internal:11434/v1"
 
     JINA_API_KEY: str
-    LANGFUSE_PUBLIC_KEY: str 
+    GROQ_API_KEY: str
+
     LANGFUSE_SECRET_KEY: str
-    LANGFUSE_HOST: str 
+    LANGFUSE_PUBLIC_KEY: str
+    LANGFUSE_HOST: str = "http://localhost:3000"
 
     DATA_PATH: str = "data/raw"
 

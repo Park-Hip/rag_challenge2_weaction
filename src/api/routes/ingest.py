@@ -20,6 +20,8 @@ async def trigger_ingestion():
         chunks = splitter.split_documents(documents)
 
         await embedder.embed_documents(chunks)
+        
+        indexer.check_collection_existence()
         indexer.index_documents(chunks)
 
         return {"status": "success", "chunks_indexed": len(chunks)}

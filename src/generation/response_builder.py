@@ -1,12 +1,11 @@
-from langfuse import observe, propagate_attributes, get_client
+from langfuse import propagate_attributes
+from src.core.langfuse import langfuse, observe
 
 from src.generation.llm_client import LLMClient
 from src.retrieval.retriever import Retriever
 from src.retrieval.query_processor import QueryProcessor
 from src.core.config import settings
 from src.core.logger import logger
-
-langfuse = get_client()
 
 class ResponseBuilder():
     """
@@ -31,6 +30,16 @@ class ResponseBuilder():
             try:
                 optimized_query = await self.query_processor.optimize_query(query)
                 search_results = await self.retriever.retrieve_documents(optimized_query)
+
+                if not documents:
+                    trace_id = langfuse.get_current_trace_id()
+                    langfuse.flush()
+                    return {
+                        "answer": "Xin lỗi, tôi không tìm thấy thông tin phù hợp trong kho lưu trữ.", 
+                        "sources": [],
+                        "trace_id": trace_id
+                    }
+
                 context = "\n\n".join([r.payload.get("text") for r in search_results])
                 final_prompt = self.system_prompt.format(context=context, query=optimized_query)
 
@@ -46,6 +55,7 @@ class ResponseBuilder():
                     })
 
                 trace_id = langfuse.get_current_trace_id()
+                langfuse.flush()
 
                 return {
                     "answer": response, 

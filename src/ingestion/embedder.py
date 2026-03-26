@@ -45,7 +45,8 @@ class Embedder:
             "model": self.model,
             "task": self.task,
             "normalized": self.normalize,
-            "input": [c["text"] for c in batch]
+            "input": [c["text"] for c in batch],
+            "dimensions": self.dimensions
         }
         try:
             async with AsyncClient(timeout=60.0) as client:
